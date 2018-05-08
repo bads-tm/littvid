@@ -1,0 +1,303 @@
+<html>
+	<head>
+		<title>LittVid | Coming This Year</title>
+		<meta name="description" content="LittVid|Creators first. For Real.">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body {
+				background-color: #000;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			.fs-bg {
+			    position: fixed;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+			    overflow: hidden;
+			    z-index: -100;
+			}
+
+			.fs-bg-video {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    opacity:0.8;
+			    -webkit-filter:blur(2px);
+			    -moz-filter:blur(2px);
+			    -o-filter:blur(2px);
+			    -ms-filter:blur(2px);
+			    filter:blur(2px);
+			}
+			@media (min-aspect-ratio: 16/9) {
+				.fs-bg-video {
+					height: 300%;
+					top: -100%;
+				}
+			}
+
+			@media (max-aspect-ratio: 16/9) {
+				.fs-bg-video {
+					width: 300%;
+					left: -100%;
+				}
+			}
+			.controls {
+				position: fixed;
+			    top: 0;
+			    right: 0;
+			   	height: 40px;
+    			width: 100px;
+    			padding: 5px;
+			}
+			.controls .bars {
+				height: 30px;
+				position: relative;
+				width: 30px;
+				float: left;
+			}
+			.controls .bars .bar {
+			    background: #FFF;
+			    bottom: 1px;
+			    height: 3px;
+			    position: absolute;
+			    width: 3px;
+			    animation: sound 0ms -800ms linear infinite alternate;
+			}
+			@keyframes sound {
+				0% {
+				    opacity: .35;
+				    height: 3px;
+				}
+				100% {
+				    opacity: 1;
+				    height: 28px;
+				}
+			}
+			.Btns i {
+				color: #FFF;
+				font-size: 30px;
+				cursor: pointer;
+			}
+			.controls .bars .bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+			.controls .bars .bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+			.controls .bars .bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+			.controls .bars .bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+			.controls .bars .bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+			.controls .bars .bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
+			.page-container {
+				width: 850px;
+				margin: auto;
+			}
+			.logo-slogan .logo {
+				border-right: 8px solid #FFF;
+				width: 600px;
+				float: left;
+			}
+			.logo-slogan .slogan {
+				color: #FFF;
+				padding: 15px;
+				float: left;
+			}
+			.logo-slogan .slogan .tphd {
+				font-size: 32px;
+			}
+			.logo-slogan .slogan .btmhd {
+				font-size: 50px;
+			}
+			.intro {
+				margin-top: 10px;
+				padding: 10px;
+			}
+			.bdscoming {
+				font-size: 40px;
+				font-weight: bold;
+				color: #FFF;
+			}
+			.clearfix {
+				clear:both;
+			}
+
+			@media (max-width: 991px) {
+				.page-container {
+					width: 590px;
+				}
+				.logo-slogan .logo {
+					border-right: 5px solid #FFF;
+					width: 400px;
+					float: left;
+				}
+				.logo-slogan .logo img {
+					width: 400px;
+				}
+				.logo-slogan .slogan {
+					padding: 10px;
+				}
+				.logo-slogan .slogan .tphd {
+					font-size: 20px;
+				}
+				.logo-slogan .slogan .btmhd {
+					font-size: 30px;
+				}
+				.intro {
+					margin-top: 8px;
+					padding: 8px;
+				}
+				.bdscoming {
+					font-size: 30px;
+					font-weight: bold;
+					color: #FFF;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.page-container {
+					width: 430px;
+				}
+				.logo-slogan .logo {
+					border-right: 4px solid #FFF;
+					width: 300px;
+					float: left;
+				}
+				.logo-slogan .logo img {
+					width: 300px;
+				}
+				.logo-slogan .slogan {
+					padding: 8px;
+				}
+				.logo-slogan .slogan .tphd {
+					font-size: 20px;
+				}
+				.logo-slogan .slogan .btmhd {
+					font-size: 30px;
+				}
+
+			}
+
+			@media (max-width: 479px) {
+				.page-container {
+					width: 430px;
+				}
+				.logo-slogan .logo {
+					border-right: 2px solid #FFF;
+					width: 200px;
+					float: left;
+				}
+				.logo-slogan .logo img {
+					width: 200px;
+				}
+				.logo-slogan .slogan {
+					padding: 5px;
+				}
+				.logo-slogan .slogan .tphd {
+					font-size: 20px;
+				}
+				.logo-slogan .slogan .btmhd {
+					font-size: 30px;
+				}
+				.intro {
+					margin-top: 5px;
+					padding: 5px;
+				}
+				.bdscoming {
+					font-size: 20px;
+					font-weight: bold;
+					color: #FFF;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="controls">
+			<div class="bars">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+			<span class="Btns">
+				<i id="volBtn" class="fa fa-volume-up" aria-hidden="true"></i>
+				&nbsp;
+				<i id="playBtn" class="fa fa-play" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="fs-bg">
+			<video id="video" loop autoplay class="fs-bg-video">
+				<source src="http://aaron.host/tm3/time%20machine%203.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="page-container">
+			<div class="logo-slogan">
+				<div class="logo">
+					<img src="tmpfiles/logo-wht-md.png" />
+				</div>
+				<div class="slogan">
+					<span class="tphd">Creators First.</span>
+					<br>
+					<span class="btmhd">For Real.</span>
+				</div>
+			</div>
+			<div class="intro clearfix">
+				<center><p class="bdscoming">Coming this year!</p></center>
+			</div>
+			<div class="fb clearfix">
+				<center>
+					<b class="bdscoming">Currently under developement.<Br>Codename: LittVid<br>a bads.tm video sharing site 100% from scratch</b>
+				</center>
+			</div>
+		</div>
+		<script>
+
+			var muted = false;
+
+		</script>
+
+		<script src="cdn/js/BVJF.js" type="text/javascript"></script>
+		<script>
+
+		$('#video')[0].volume = 0.2;
+
+		$('#video').on({
+			'playing': function(){
+				$('#playBtn').swapClass('fa-play', 'fa-pause');
+			},
+
+			'seeking': function(){
+				$('#playBtn').swapClass('fa-pause', 'fa-play');
+			},
+
+			'pause': function(){
+				$('#playBtn').swapClass('fa-pause', 'fa-play');
+			}
+		});
+
+		$('#volBtn').on('click', function(){
+			if (muted) {
+				$('#video')[0].volume = 0.2;
+				muted = false;
+				$(this).swapClass('fa-volume-off', 'fa-volume-up');
+			} else {
+				$('#video')[0].volume = 0;
+				muted = true
+				$(this).swapClass('fa-volume-up', 'fa-volume-off');
+			}
+		});
+
+		$('#playBtn').on('click', function(){
+			if($('#video')[0].paused){
+				$('#video')[0].play();
+			} else {
+				$('#video')[0].pause();
+			}
+		});
+
+		</script>
+
+	</body>
+</html>
